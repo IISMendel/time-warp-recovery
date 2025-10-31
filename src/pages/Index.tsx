@@ -32,53 +32,85 @@ const Index = () => {
         {/* Main Content Card */}
         <Card className="bg-white/95 backdrop-blur-xl rounded-[2rem] md:rounded-[3rem] shadow-2xl overflow-hidden">
           <Tabs defaultValue="home" className="w-full">
-            <TabsList className="w-full overflow-x-auto flex flex-nowrap justify-start md:justify-center gap-2 md:gap-4 p-4 md:p-6 bg-gradient-to-r from-white via-blue-50 to-white sticky top-0 z-50 shadow-2xl backdrop-blur-sm scrollbar-hide rounded-b-3xl">
-              <TabsTrigger value="home" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-red-600 data-[state=active]:to-red-700 transition-all duration-300 border-2 border-white/20">
-                <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm drop-shadow-sm">🏠 홈</div>
-                  <div className="text-[10px] md:text-xs opacity-90">HOME</div>
+            <TabsList className="w-full overflow-x-auto flex flex-nowrap justify-start md:justify-center gap-1 p-3 md:p-4 bg-white/90 backdrop-blur-xl sticky top-0 z-50 shadow-md scrollbar-hide border-b-2 border-gray-100">
+              <TabsTrigger value="home" className="flex-shrink-0 px-4 md:px-6 py-2.5 md:py-3 text-xs md:text-sm font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600">
+                <div className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span>🏠</span>
+                  <div className="hidden md:block">
+                    <div className="font-bold">홈</div>
+                    <div className="text-[10px] opacity-80">HOME</div>
+                  </div>
+                  <div className="md:hidden font-bold">HOME</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="storia" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 transition-all duration-300 border-2 border-white/20">
-                <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm drop-shadow-sm">📖 역사</div>
-                  <div className="text-[10px] md:text-xs opacity-90">STORIA</div>
+              <TabsTrigger value="storia" className="flex-shrink-0 px-4 md:px-6 py-2.5 md:py-3 text-xs md:text-sm font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600">
+                <div className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span>📖</span>
+                  <div className="hidden md:block">
+                    <div className="font-bold">역사</div>
+                    <div className="text-[10px] opacity-80">STORIA</div>
+                  </div>
+                  <div className="md:hidden font-bold">STORIA</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="tecnico" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-red-600 data-[state=active]:to-red-700 transition-all duration-300 border-2 border-white/20">
-                <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm drop-shadow-sm">🎓 기술</div>
-                  <div className="text-[10px] md:text-xs opacity-90">TECNICO</div>
+              <TabsTrigger value="tecnico" className="flex-shrink-0 px-4 md:px-6 py-2.5 md:py-3 text-xs md:text-sm font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600">
+                <div className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span>🎓</span>
+                  <div className="hidden md:block">
+                    <div className="font-bold">기술</div>
+                    <div className="text-[10px] opacity-80">TECNICO</div>
+                  </div>
+                  <div className="md:hidden font-bold">TECNICO</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="professionale" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 transition-all duration-300 border-2 border-white/20">
-                <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm drop-shadow-sm">🔧 전문</div>
-                  <div className="text-[10px] md:text-xs opacity-90">PROFESSIONALE</div>
+              <TabsTrigger value="professionale" className="flex-shrink-0 px-4 md:px-6 py-2.5 md:py-3 text-xs md:text-sm font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600">
+                <div className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span>🔧</span>
+                  <div className="hidden md:block">
+                    <div className="font-bold">전문</div>
+                    <div className="text-[10px] opacity-80">PROF.</div>
+                  </div>
+                  <div className="md:hidden font-bold">PROF.</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="pcto" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-red-600 data-[state=active]:to-red-700 transition-all duration-300 border-2 border-white/20">
-                <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm drop-shadow-sm">💼 학교-직장 교육</div>
-                  <div className="text-[10px] md:text-xs opacity-90">FORMAZIONE SCUOLA-LAVORO</div>
+              <TabsTrigger value="pcto" className="flex-shrink-0 px-4 md:px-6 py-2.5 md:py-3 text-xs md:text-sm font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600">
+                <div className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span>💼</span>
+                  <div className="hidden md:block">
+                    <div className="font-bold">학교-직장</div>
+                    <div className="text-[10px] opacity-80">PCTO</div>
+                  </div>
+                  <div className="md:hidden font-bold">PCTO</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="internazionalizzazione" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 transition-all duration-300 border-2 border-white/20">
-                <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm drop-shadow-sm">🌍 국제화</div>
-                  <div className="text-[10px] md:text-xs opacity-90">INTERNAZIONALIZZAZIONE</div>
+              <TabsTrigger value="internazionalizzazione" className="flex-shrink-0 px-4 md:px-6 py-2.5 md:py-3 text-xs md:text-sm font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600">
+                <div className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span>🌍</span>
+                  <div className="hidden md:block">
+                    <div className="font-bold">국제화</div>
+                    <div className="text-[10px] opacity-80">INTL</div>
+                  </div>
+                  <div className="md:hidden font-bold">INTL</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="contatti" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-red-600 data-[state=active]:to-red-700 transition-all duration-300 border-2 border-white/20">
-                <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm drop-shadow-sm">📍 연락처</div>
-                  <div className="text-[10px] md:text-xs opacity-90">CONTATTI</div>
+              <TabsTrigger value="contatti" className="flex-shrink-0 px-4 md:px-6 py-2.5 md:py-3 text-xs md:text-sm font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600">
+                <div className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span>📍</span>
+                  <div className="hidden md:block">
+                    <div className="font-bold">연락처</div>
+                    <div className="text-[10px] opacity-80">CONTATTI</div>
+                  </div>
+                  <div className="md:hidden font-bold">CONTATTI</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="galleria" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 transition-all duration-300 border-2 border-white/20">
-                <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm drop-shadow-sm">📸 갤러리</div>
-                  <div className="text-[10px] md:text-xs opacity-90">GALLERIA</div>
+              <TabsTrigger value="galleria" className="flex-shrink-0 px-4 md:px-6 py-2.5 md:py-3 text-xs md:text-sm font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600">
+                <div className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span>📸</span>
+                  <div className="hidden md:block">
+                    <div className="font-bold">갤러리</div>
+                    <div className="text-[10px] opacity-80">GALLERY</div>
+                  </div>
+                  <div className="md:hidden font-bold">GALLERY</div>
                 </div>
               </TabsTrigger>
             </TabsList>
