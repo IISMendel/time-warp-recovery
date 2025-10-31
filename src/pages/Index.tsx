@@ -32,53 +32,53 @@ const Index = () => {
         {/* Main Content Card */}
         <Card className="bg-white/95 backdrop-blur-xl rounded-[2rem] md:rounded-[3rem] shadow-2xl overflow-hidden">
           <Tabs defaultValue="home" className="w-full">
-            <TabsList className="w-full overflow-x-auto flex flex-nowrap justify-start md:justify-center gap-3 p-4 md:p-6 bg-white sticky top-0 z-50 shadow-lg scrollbar-hide">
-              <TabsTrigger value="home" className="flex-shrink-0 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-bold rounded-xl border-2 bg-red-500 text-white border-red-600 data-[state=active]:bg-red-600 data-[state=active]:shadow-xl hover:bg-red-600 transition-all">
+            <TabsList className="w-full overflow-x-auto flex flex-nowrap justify-start md:justify-center gap-2 md:gap-4 p-4 md:p-6 bg-gradient-to-r from-white via-blue-50 to-white sticky top-0 z-50 shadow-2xl backdrop-blur-sm scrollbar-hide rounded-b-3xl">
+              <TabsTrigger value="home" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-red-600 data-[state=active]:to-red-700 transition-all duration-300 border-2 border-white/20">
                 <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm">🏠 홈</div>
-                  <div className="text-[10px] md:text-xs">HOME</div>
+                  <div className="text-xs md:text-sm drop-shadow-sm">🏠 홈</div>
+                  <div className="text-[10px] md:text-xs opacity-90">HOME</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="storia" className="flex-shrink-0 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-bold rounded-xl border-2 bg-blue-500 text-white border-blue-600 data-[state=active]:bg-blue-600 data-[state=active]:shadow-xl hover:bg-blue-600 transition-all">
+              <TabsTrigger value="storia" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 transition-all duration-300 border-2 border-white/20">
                 <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm">📖 역사</div>
-                  <div className="text-[10px] md:text-xs">STORIA</div>
+                  <div className="text-xs md:text-sm drop-shadow-sm">📖 역사</div>
+                  <div className="text-[10px] md:text-xs opacity-90">STORIA</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="tecnico" className="flex-shrink-0 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-bold rounded-xl border-2 bg-red-500 text-white border-red-600 data-[state=active]:bg-red-600 data-[state=active]:shadow-xl hover:bg-red-600 transition-all">
+              <TabsTrigger value="tecnico" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-red-600 data-[state=active]:to-red-700 transition-all duration-300 border-2 border-white/20">
                 <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm">🎓 기술</div>
-                  <div className="text-[10px] md:text-xs">TECNICO</div>
+                  <div className="text-xs md:text-sm drop-shadow-sm">🎓 기술</div>
+                  <div className="text-[10px] md:text-xs opacity-90">TECNICO</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="professionale" className="flex-shrink-0 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-bold rounded-xl border-2 bg-blue-500 text-white border-blue-600 data-[state=active]:bg-blue-600 data-[state=active]:shadow-xl hover:bg-blue-600 transition-all">
+              <TabsTrigger value="professionale" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 transition-all duration-300 border-2 border-white/20">
                 <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm">🔧 전문</div>
-                  <div className="text-[10px] md:text-xs">PROFESSIONALE</div>
+                  <div className="text-xs md:text-sm drop-shadow-sm">🔧 전문</div>
+                  <div className="text-[10px] md:text-xs opacity-90">PROFESSIONALE</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="pcto" className="flex-shrink-0 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-bold rounded-xl border-2 bg-red-500 text-white border-red-600 data-[state=active]:bg-red-600 data-[state=active]:shadow-xl hover:bg-red-600 transition-all">
+              <TabsTrigger value="pcto" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-red-600 data-[state=active]:to-red-700 transition-all duration-300 border-2 border-white/20">
                 <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm">💼 학교-직장 교육</div>
-                  <div className="text-[10px] md:text-xs">FORMAZIONE SCUOLA-LAVORO</div>
+                  <div className="text-xs md:text-sm drop-shadow-sm">💼 학교-직장 교육</div>
+                  <div className="text-[10px] md:text-xs opacity-90">FORMAZIONE SCUOLA-LAVORO</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="internazionalizzazione" className="flex-shrink-0 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-bold rounded-xl border-2 bg-blue-500 text-white border-blue-600 data-[state=active]:bg-blue-600 data-[state=active]:shadow-xl hover:bg-blue-600 transition-all">
+              <TabsTrigger value="internazionalizzazione" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 transition-all duration-300 border-2 border-white/20">
                 <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm">🌍 국제화</div>
-                  <div className="text-[10px] md:text-xs">INTERNAZIONALIZZAZIONE</div>
+                  <div className="text-xs md:text-sm drop-shadow-sm">🌍 국제화</div>
+                  <div className="text-[10px] md:text-xs opacity-90">INTERNAZIONALIZZAZIONE</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="contatti" className="flex-shrink-0 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-bold rounded-xl border-2 bg-red-500 text-white border-red-600 data-[state=active]:bg-red-600 data-[state=active]:shadow-xl hover:bg-red-600 transition-all">
+              <TabsTrigger value="contatti" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-red-600 data-[state=active]:to-red-700 transition-all duration-300 border-2 border-white/20">
                 <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm">📍 연락처</div>
-                  <div className="text-[10px] md:text-xs">CONTATTI</div>
+                  <div className="text-xs md:text-sm drop-shadow-sm">📍 연락처</div>
+                  <div className="text-[10px] md:text-xs opacity-90">CONTATTI</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="galleria" className="flex-shrink-0 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-bold rounded-xl border-2 bg-blue-500 text-white border-blue-600 data-[state=active]:bg-blue-600 data-[state=active]:shadow-xl hover:bg-blue-600 transition-all">
+              <TabsTrigger value="galleria" className="flex-shrink-0 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-black rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg hover:shadow-2xl hover:scale-105 data-[state=active]:scale-110 data-[state=active]:shadow-2xl data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 transition-all duration-300 border-2 border-white/20">
                 <div className="text-center whitespace-nowrap">
-                  <div className="text-xs md:text-sm">📸 갤러리</div>
-                  <div className="text-[10px] md:text-xs">GALLERIA</div>
+                  <div className="text-xs md:text-sm drop-shadow-sm">📸 갤러리</div>
+                  <div className="text-[10px] md:text-xs opacity-90">GALLERIA</div>
                 </div>
               </TabsTrigger>
             </TabsList>
