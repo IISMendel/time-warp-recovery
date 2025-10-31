@@ -120,7 +120,8 @@ const Index = () => {
                   <div>Il Futuro dell'Agraria</div>
                 </h4>
                 <p className="text-lg text-foreground/80">
-                  L'Istituto Mendel è la scuola superiore di riferimento per l'Agraria, l'Ambiente e l'Agroindustria del territorio, unendo tradizione, innovazione e opportunità concrete di lavoro e studio.
+                  <div className="mb-2">멘델 연구소는 전통, 혁신 및 구체적인 노동 및 학습 기회를 결합하여 농업, 환경 및 농업 산업 분야에서 이 지역의 참조 고등학교입니다.</div>
+                  <div>L'Istituto Mendel è la scuola superiore di riferimento per l'Agraria, l'Ambiente e l'Agroindustria del territorio, unendo tradizione, innovazione e opportunità concrete di lavoro e studio.</div>
                 </p>
               </Card>
 
@@ -357,6 +358,16 @@ const Index = () => {
                 <p className="text-lg text-foreground/80 mb-2">
                   <div className="mb-2">멘델 연구소는 현대 농업의 과제에 부합하는 전문가를 양성하면서 영토의 풍부한 농촌 전통과 과학 및 교육 혁신을 결합합니다.</div>
                   <div>L'Istituto Mendel unisce la ricca tradizione rurale del territorio con l'innovazione scientifica e didattica, formando professionisti in linea con le sfide dell'agricoltura moderna.</div>
+                </p>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-amber-50 to-yellow-50 p-8 rounded-2xl border-l-4 border-amber-500">
+                <h4 className="text-2xl font-bold text-amber-700 mb-4">
+                  <div className="text-xl mb-1">학교와 그 맥락</div>
+                  <div>La scuola e il suo contesto</div>
+                </h4>
+                <p className="text-base text-foreground/80 leading-relaxed">
+                  1988년에 국립 농업 기술 연구소가 설립되었으며, 2년 후 유전학의 아버지인 그레고리오 멘델의 이름을 따서 명명되었습니다. 2011년부터 학교의 교육 프로그램은 새로운 교육 요구에 부응하기 위해 확대되었습니다. 같은 해에 롬바르디아 지역의 제안으로 직업 교육 및 훈련 과정의 첫 번째 섹션이 개설되었습니다. 2014/2015 학년도부터는 기술 연구소의 야간 과정이 시작되었으며, 2018/2019 학년도에는 직업 연구소의 야간 과정이 추가되어 현재까지 성인 교육을 위해 운영되고 있습니다. 이 모든 해 동안 페라치 재단과 멘델 학교 간의 협력은 혁신, 연구, 그리고 동시에 지역 농촌 전통에 대한 존중을 바라보며 유익하게 계속되었습니다.
                 </p>
               </Card>
 
@@ -726,14 +737,14 @@ const Index = () => {
               <Card className="overflow-hidden rounded-2xl">
                 <div className="aspect-video w-full">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.8!2d8.9119!3d45.5789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786a0c5f8b8f0c5%3A0x9c0b5f5f5f5f5f5f!2sIIS%20Gregorio%20Mendel!5e0!3m2!1sit!2sit!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.234!2d8.897!3d45.574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786a0dcb1234567%3A0xabcdef1234567890!2sVia%20Ferrazzi%2C%2015%2C%2020020%20Villa%20Cortese%20MI!5e0!3m2!1sit!2sit!4v1234567890123"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Mappa IIS Mendel"
+                    title="Mappa IIS Mendel - Via Ferrazzi 15, Villa Cortese"
                   ></iframe>
                 </div>
               </Card>
