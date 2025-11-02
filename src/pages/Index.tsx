@@ -32,50 +32,50 @@ const Index = () => {
         {/* Main Content Card */}
         <Card className="bg-white/95 backdrop-blur-xl rounded-[2rem] md:rounded-[3rem] shadow-2xl overflow-hidden">
           <Tabs defaultValue="home" className="w-full">
-            <TabsList className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-3 md:p-4 bg-white/90 backdrop-blur-xl sticky top-0 z-50 shadow-md border-b-2 border-gray-100">
-              <TabsTrigger value="home" className="px-3 md:px-5 py-3 md:py-4 text-sm md:text-base font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600">
+            <TabsList className="w-full overflow-x-auto flex flex-nowrap justify-start md:justify-center gap-2 p-3 md:p-4 bg-white/90 backdrop-blur-xl sticky top-0 z-50 shadow-md scrollbar-hide border-b-2 border-gray-100">
+              <TabsTrigger value="home" className="flex-shrink-0 px-5 md:px-7 py-2.5 md:py-3.5 text-sm md:text-base font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600 min-w-[80px] md:min-w-[100px]">
                 <div className="flex flex-col items-center gap-0.5 whitespace-nowrap">
                   <span className="text-base md:text-lg">🏠</span>
                   <div className="text-xs md:text-sm font-bold leading-tight">HOME</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="storia" className="px-3 md:px-5 py-3 md:py-4 text-sm md:text-base font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600">
+              <TabsTrigger value="storia" className="flex-shrink-0 px-5 md:px-7 py-2.5 md:py-3.5 text-sm md:text-base font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600 min-w-[80px] md:min-w-[100px]">
                 <div className="flex flex-col items-center gap-0.5 whitespace-nowrap">
                   <span className="text-base md:text-lg">📖</span>
                   <div className="text-xs md:text-sm font-bold leading-tight">STORIA</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="tecnico" className="px-3 md:px-5 py-3 md:py-4 text-sm md:text-base font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600">
+              <TabsTrigger value="tecnico" className="flex-shrink-0 px-5 md:px-7 py-2.5 md:py-3.5 text-sm md:text-base font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600 min-w-[80px] md:min-w-[100px]">
                 <div className="flex flex-col items-center gap-0.5 whitespace-nowrap">
                   <span className="text-base md:text-lg">🎓</span>
                   <div className="text-xs md:text-sm font-bold leading-tight">TECNICO</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="professionale" className="px-3 md:px-5 py-3 md:py-4 text-sm md:text-base font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600">
+              <TabsTrigger value="professionale" className="flex-shrink-0 px-5 md:px-7 py-2.5 md:py-3.5 text-sm md:text-base font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600 min-w-[80px] md:min-w-[100px]">
                 <div className="flex flex-col items-center gap-0.5 whitespace-nowrap">
                   <span className="text-base md:text-lg">🔧</span>
                   <div className="text-xs md:text-sm font-bold leading-tight">PROF.</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="pcto" className="px-3 md:px-5 py-3 md:py-4 text-sm md:text-base font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600">
+              <TabsTrigger value="pcto" className="flex-shrink-0 px-3 md:px-5 py-2.5 md:py-3.5 text-sm md:text-base font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600 min-w-[100px] md:min-w-[130px]">
                 <div className="flex flex-col items-center gap-0.5 whitespace-nowrap">
                   <span className="text-base md:text-lg">💼</span>
                   <div className="text-[10px] md:text-xs font-bold leading-tight">SCUOLA-LAVORO</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="internazionalizzazione" className="px-3 md:px-5 py-3 md:py-4 text-sm md:text-base font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600">
+              <TabsTrigger value="internazionalizzazione" className="flex-shrink-0 px-3 md:px-5 py-2.5 md:py-3.5 text-sm md:text-base font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600 min-w-[100px] md:min-w-[130px]">
                 <div className="flex flex-col items-center gap-0.5 whitespace-nowrap">
                   <span className="text-base md:text-lg">🌍</span>
                   <div className="text-[10px] md:text-xs font-bold leading-tight">INTERNAZ.</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="contatti" className="px-3 md:px-5 py-3 md:py-4 text-sm md:text-base font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600">
+              <TabsTrigger value="contatti" className="flex-shrink-0 px-5 md:px-7 py-2.5 md:py-3.5 text-sm md:text-base font-bold rounded-lg bg-white text-red-600 hover:bg-red-50 data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-red-200 data-[state=active]:border-red-600 min-w-[80px] md:min-w-[100px]">
                 <div className="flex flex-col items-center gap-0.5 whitespace-nowrap">
                   <span className="text-base md:text-lg">📍</span>
                   <div className="text-xs md:text-sm font-bold leading-tight">CONTATTI</div>
                 </div>
               </TabsTrigger>
-              <TabsTrigger value="galleria" className="px-3 md:px-5 py-3 md:py-4 text-sm md:text-base font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600">
+              <TabsTrigger value="galleria" className="flex-shrink-0 px-5 md:px-7 py-2.5 md:py-3.5 text-sm md:text-base font-bold rounded-lg bg-white text-blue-600 hover:bg-blue-50 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md transition-all duration-200 border border-blue-200 data-[state=active]:border-blue-600 min-w-[80px] md:min-w-[100px]">
                 <div className="flex flex-col items-center gap-0.5 whitespace-nowrap">
                   <span className="text-base md:text-lg">📸</span>
                   <div className="text-xs md:text-sm font-bold leading-tight">GALLERIA</div>
